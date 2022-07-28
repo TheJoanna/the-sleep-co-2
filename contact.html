@@ -27,21 +27,21 @@
     <body>
 
         <!----------------------- Header Banner  ------------------------>
-        <header class="padded grid center tall-60 bg-header"> 
-            <div class="header-nav col-12 grid"> 
-                <div class="col-4"> 
+        <header class="grid center tall-60"> 
+            <div class="header-nav col-12-top grid"> 
+                <div class="col-4-middle"> 
                     <a href="/index.html" class="logo"> 
                         <h2> The Sleep Co </h2>
                     </a>
                 </div>
-                <nav class="col-8 right">
+                <nav class="col-8-middle right">
                     <a href="/index.html"> Home </a>
                     <a href="/about.html"> About </a>
                     <a href="/products.html"> Products </a>
                     <a href="/contact.html"> Contact </a>
                 </nav>
             </div>
-            <div class="col-12-middle">
+            <div class="col-12">
                 <h3 class="font-weight-extra-bold editable">
                     why <span class="featured-text"> wait</span>
                 </h3>
@@ -52,13 +52,20 @@
         </header>    
 
         <!----------------- VIDEO Section ----------------->
-        <section class="grid bg-dark light-text padded">
+        <section class="grid-middle bg-dark light-text padded">
             <div class="col-6 padded"> 
                 <h2>let's <span class="featured-text">connect </span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus a eum, magnam quas est et inventore, libero placeat necessitatibus labore incidunt explicabo laborum, nam veniam laudantium similique consequuntur eaque tempora?</p>
             </div>
             <div class="col-6 padded"> 
-                <h2> ADD CONTACT FORM HERE! </h2>
+                <form class="form-style-two" action="https://formspree.io/f/mgedjjnz"   method="POST">
+
+                    <input type="text" name="_name" placeholder="Your Name">
+                    <input type="email" name="_replyto" id="_replyto" placeholder="Your Email">
+                    <textarea name="message" id="message" placeholder="Tell us what you want..." rows="4"></textarea>
+
+                    <button type="submit" class="button"> SUBMIT </button>
+                </form>
             </div>
         </section>     
         
