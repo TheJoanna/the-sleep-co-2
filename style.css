@@ -111,7 +111,7 @@
     background-image: url('/images/the-sleep-co-4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 10rem;
+    /* min-height: 10rem; */
 }
 
 .landscape { padding-bottom: 65%;  }
@@ -275,3 +275,79 @@ a:hover {
     line-height: 1;
     display: inline-block;
  }
+
+
+ /* General CSS Responsiveness Styles (Apply everywhere) */
+
+ .show-xs,
+ .show-sm,
+ .show-md {
+    display: none;
+ }
+
+/* ---------- MD Media Query (64em / 1024px) -----------*/
+
+@media(max-width:64em) {
+    .show-md { display: block; }
+    .hide-md { display: none;  }
+
+    .md-tall-80 { min-height: 80vh; }
+
+}
+
+/* ---------- SM Media Query (48em / 768px) -----------*/
+
+@media(max-width:48em) {
+    
+    /* html     { font-size: 14px;     }
+    p        {font-size: 1.1 rem;   } */
+
+    .show-sm { display: block; }
+    .hide-sm { display: none;  }
+
+    .sm-center   { text-align: center; }
+    .sm-left     { text-align: left;   }
+    .sm-right    { text-align: right;  }
+
+    .sm-padded        { padding: 5%;        }
+    .sm-padded-1      { padding: 1rem;      }
+    .sm-padded-05     { padding: 0.5rem;    }
+
+    .sm-padded-t-0    { padding-top: 0;     }
+    .sm-padded-b-0    { padding-bottom: 0;  }
+    .sm-padded-l-0    { padding-left: 0;    }
+    .sm-padded-r-0    { padding-right: 0;   }
+
+    .logo h2          { font-size: 2rem;    }
+
+    header h3         { font-size: 11vw;    }
+
+}
+
+/* ---------- XS Media Query (36em / 576px) -----------*/
+
+@media(max-width:36em) {
+
+    .show-xs { display: block; }
+    .hide-xs { display: none;  }
+
+    header h1 { 
+        font-size: 1.4rem;  
+        line-height: 1.1;
+    }    
+
+    h2       { font-size: 2rem; }
+}
+
+/* ---------- XXS Media Query (25em / 400px) -----------*/
+/* Due to the higher specificity of Gridlex (i.e. col-3_sm-6), need to add [class*="grid"] to make this class more specifc so that it overrides Gridlex at 25em */
+
+@media(max-width:25em) {
+
+    /* html { font-size: 12px; } */
+
+    [class*="grid"] .xxs-stack {
+        flex-basis: 100%;
+        max-width: 100%;
+    }   
+}
