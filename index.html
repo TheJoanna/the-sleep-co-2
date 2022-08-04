@@ -1,14 +1,23 @@
 ---
 layout: default
+featured: 
+ - icon: fa-solid fa-cloud
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis iusto blanditiis aut perspiciatis inventore, odit fugiat praesentium veniam ducimus esse repudiandae! Corporis alias mollitia quae magnam eveniet, nemo porro.
+ - icon: fa-solid fa-apple-whole
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis iusto blanditiis aut perspiciatis inventore, odit fugiat praesentium veniam ducimus esse repudiandae! Corporis alias mollitia quae magnam eveniet, nemo porro.  
+ - icon: fa-solid fa-carrot
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis iusto blanditiis aut perspiciatis inventore, odit fugiat praesentium veniam ducimus esse repudiandae! Corporis alias mollitia quae magnam eveniet, nemo porro.
+ - icon: fa-solid fa-pizza-slice
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis iusto blanditiis aut perspiciatis inventore, odit fugiat praesentium veniam ducimus esse repudiandae! Corporis alias mollitia quae magnam eveniet, nemo porro.
 ---
 
         
         <!----------------------- Header Banner  ------------------------>
-        <header class="grid center tall-100 md-tall-80"> 
+        <header class="grid tall-100 md-tall-80"> 
             
             {% include header-nav.html %}
 
-            <div class="col-12">
+            <div class="col-12 center">
                 <h3 class="font-weight-extra-bold editable">
                     <span class="featured-text"> sleep</span> like a baby
                 </h3>
@@ -44,24 +53,20 @@ layout: default
         </section>
     
         <!----------------- Feature Icon Grid ----------------->
-        <section class="padded grid bg-dark">
+        <section class="padded grid-center bg-dark">
             <div class="padded-sm col-12 center editable">
                 <h2><span class="featured-text">features </span>you will love</h2>
             </div>
+
+            {% for item in page.featured %}
+
             <div class="padded-sm col-3_sm-6 xxs-stack editable ">
-                <i class="fa-solid fa-cloud"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis iusto blanditiis aut perspiciatis inventore, odit fugiat praesentium veniam ducimus esse repudiandae! Corporis alias mollitia quae magnam eveniet, nemo porro.</p>
+                <i class="{{item.icon}}"></i>
+                <p>{{item.description}}</p>
             </div>
-            <div class="padded-sm col-3_sm-6 xxs-stack editable">
-                <i class="fa-solid fa-cloud"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis iusto blanditiis aut perspiciatis inventore, odit fugiat praesentium veniam ducimus esse repudiandae! Corporis alias mollitia quae magnam eveniet, nemo porro.</p>
-            </div>
-            <div class="padded-sm col-3_sm-6 xxs-stack editable">
-                <i class="fa-solid fa-cloud"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis iusto blanditiis aut perspiciatis inventore, odit fugiat praesentium veniam ducimus esse repudiandae! Corporis alias mollitia quae magnam eveniet, nemo porro.</p></div>
-            <div class="padded-sm col-3_sm-6 xxs-stack editable">
-                <i class="fa-solid fa-cloud"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis iusto blanditiis aut perspiciatis inventore, odit fugiat praesentium veniam ducimus esse repudiandae! Corporis alias mollitia quae magnam eveniet, nemo porro.</p></div>
+
+            {% endfor %}
+
         </section>
 
         <!----------------- Image Banner ----------------->

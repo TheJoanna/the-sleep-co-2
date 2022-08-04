@@ -1,15 +1,26 @@
 ---
 layout: default
+cards:
+ - heading: 1st heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error doloremque inventore debitis expedita neque ad ab! 
+   featured_image: /images/the-sleep-co-4.jpg
+ - heading: 2nd heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error doloremque inventore debitis expedita neque ad ab! 
+   featured_image: /images/the-sleep-co-2.jpg
+ - heading: 3rd heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error doloremque inventore debitis expedita neque ad ab! 
+   featured_image: /images/the-sleep-co-3.jpg
+
 ---
 
         <!----------------------- Header Banner  ------------------------>
-        <header class="grid center tall-60 md-tall-80"> 
+        <header class="grid tall-60 md-tall-80"> 
             
             {% include header-nav.html %}
 
-            <div class="col-12">
+            <div class="col-12 center">
                 <h3 class="font-weight-extra-bold editable">
-                    <span class="featured-text"> sleep</span> like a baby
+                    <span class="featured-text"> addictively</span> soft
                 </h3>
                 <h1 class="font-weight-light editable">
                     the ultimate mattress solution
@@ -36,42 +47,26 @@ layout: default
             <div class="padded-sm col-3 editable">
                 <h3> little heading </h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis iusto blanditiis aut perspiciatis inventore, odit fugiat praesentium veniam ducimus esse repudiandae! Corporis alias mollitia quae magnam eveniet, nemo porro.</p></div>
-        </section>
+        </section>      
 
         <!----------------- Cards -------------->
         <section class="grid padded">
-            <div class="col-4 padded-sm">
-                <div class="card">
-                    <div class="bg-image portrait"> </div>
-                    <div class="padded"> 
-                        <h3> little heading </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis iusto blanditiis aut perspiciatis inventore, odit fugiat praesentium veniam ducimus esse repudiandae! Corporis alias mollitia quae magnam eveniet, nemo porro.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-4 padded-sm">
-                <div class="card">
-                    <div class="bg-image portrait"> </div>
-                    <div class="padded"> 
-                        <h3> little heading </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis iusto blanditiis aut perspiciatis inventore, odit fugiat praesentium veniam ducimus esse repudiandae! Corporis alias mollitia quae magnam eveniet, nemo porro.</p>
-                    </div>
-                </div>
-            </div>
 
+            {% for item in page.cards %}
             <div class="col-4 padded-sm">
                 <div class="card">
-                    <div class="bg-image portrait"> </div>
+                    <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"> </div>
                     <div class="padded"> 
-                        <h3> little heading </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui perferendis iusto blanditiis aut perspiciatis inventore, odit fugiat praesentium veniam ducimus esse repudiandae! Corporis alias mollitia quae magnam eveniet, nemo porro.</p>
+                        <h3> {{item.heading}} </h3>
+                        <p>{{item.description}}</p>
                     </div>
                 </div>
             </div>
-            
-        </section>
         
+            {% endfor %}
+
+        </section>
+
         <!----------------- Image Banner ----------------->
         <section class="padded center bg-dark tall-70 grid">
             <div class="col-12-middle">
@@ -80,11 +75,11 @@ layout: default
                     <br /><span class="featured-text">free</span> express shipping
                 </h3>
             </div>    
-        </section>
-
+        </section>    
+        
         <!----------------- Gallery/About Section ----------------->
         <section class="grid">
-            <div class="padded col-6-middle">
+            <div class="padded col-6_xs-12-middle">
                 <h2 class="editable">
                     built to last a <span class="featured-text">lifetime</span>
                 </h2>
@@ -95,32 +90,18 @@ layout: default
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, ab deleniti minima similique nostrum asperiores vel <a target="_blank" rel="noopener" href="https://www.google.com">qui velit possimus</a> veritatis ut, impedit consequatur facilis perferendis, eligendi aliquid harum? Aliquam, id!
                 </p>
             </div>
-            <div class="bg-bedroom col-6 tall-70">
+            <div class="bg-bedroom col-6_xs-12 tall-70 hide-xs">
                 <!-- background image bed -->
             </div>
-
-            <div class="bg-pug col-6 tall-70">
+            <div class="bg-pug col-6_xs-12 tall-70">
                 <!-- background image pub sleeping -->
             </div>
-            <div class="padded col-6-middle editable">
+            <div class="padded col-6_xs-12-middle editable">
                 <h2>so <span class="featured-text">soft </span> you'll melt</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus a eum, magnam quas est et inventore, libero placeat necessitatibus labore incidunt explicabo laborum, nam veniam laudantium similique consequuntur eaque tempora?</p>
             </div>
+        </section>        
+        
 
-            <div class="padded col-6-middle">
-                <h2 class="editable">
-                    built to last a <span class="featured-text">lifetime</span>
-                </h2>
-                <p class="editable">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus a eum, magnam quas est et inventore, <strong>libero placeat</strong> necessitatibus labore incidunt explicabo laborum, nam veniam laudantium similique consequuntur eaque tempora?
-                </p>
-                <p class="editable">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, ab deleniti minima similique nostrum asperiores vel <a target="_blank" rel="noopener" href="https://www.google.com">qui velit possimus</a> veritatis ut, impedit consequatur facilis perferendis, eligendi aliquid harum? Aliquam, id!
-                </p>
-            </div>
-            <div class="bg-bedroom col-6 tall-70">
-                <!-- background image bed -->
-            </div>
 
-        </section>
         
