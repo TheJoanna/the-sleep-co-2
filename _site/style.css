@@ -284,6 +284,22 @@ a:hover {
     padding: 0.5%;
   }
 
+.gallery .gallery-item {
+    border-bottom: none;
+}  
+
+/* Background of gallery when active (Light Gallery default class) */
+.lg-backdrop {
+    background-color: rgb(20,20,20);
+}
+
+.lg-backdrop.in {
+    opacity: 0.9;
+}
+
+.lg-sub-html {
+    background-color: rgba(20,20,20,0.95);
+}
 
  /* Buttons & Forms  -----------------------------*/
  input,
