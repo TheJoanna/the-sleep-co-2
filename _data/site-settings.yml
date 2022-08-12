@@ -17,3 +17,5 @@ design:
   light_color: '#E3ECF2'
   subtitle_color: 'rgb(120,120,125)'
   quote_color: 'rgb(120,120,125)'
+  active-gallery_color: 'rgb(20,20,20)'
+  active-gallery-subtitle_color: 'rgba(20,20,20,0.95)'
