@@ -102,7 +102,7 @@
 }
 
 .bg-featured { background-color: #F4B525; }
-.bg-light    { background-color: #E3ECF2; }
+.bg-light    { background-color: var(--light); }
 
 
 /* Image Styles --------------------------------------*/

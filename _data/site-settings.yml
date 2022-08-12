@@ -11,6 +11,7 @@ social:
   facebook_url:
   twitter_username:
 design:
-  featured-text_color: '#f4b525'
-  white-text_color: '#ffffff'
-  navy-text_color: '#192b37'
+  featured_color: '#f4b525'
+  white_color: '#ffffff'
+  dark_color: '#192b37'
+  light_color: '#E3ECF2'
