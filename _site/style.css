@@ -97,11 +97,11 @@
 /* Backgrounds & Images -------------------------------*/
 
 .bg-dark { 
-    background-color: #192B37; 
-    color: white;
+    background-color: var(--dark); 
+    color: var(--white);
 }
 
-.bg-featured { background-color: #F4B525; }
+.bg-featured { background-color: var(--featured); }
 .bg-light    { background-color: var(--light); }
 
 
@@ -135,7 +135,7 @@
 
 body { 
     font-family: "Catamaran", sans-serif;
-    color: #192B37;
+    color: var(--dark);
 }
 
 .left        { text-align: left;    }
@@ -169,15 +169,15 @@ a {
 }
 
 a:hover {
-    color: #FFBE00;
+    color: var(--featured);
 }
 
 .font-weight-normal         { font-weight: normal; }
 .font-weight-light          { font-weight: 200;    }
 .font-weight-extra-bold     { font-weight: 800;    }
 
-.featured-text  { color: #FFBE00;    }
-.white-text     { color: white;      }
+.featured-text  { color: var(--featured);    }
+.white-text     { color: var(--white);      }
 
 .small-text     { font-size: 1.5rem;   }
 .medium-text    { font-size: 2rem;     }
@@ -185,7 +185,7 @@ a:hover {
 
 .subtitle { 
     font-size: 1.2rem;    
-    color: rgb(120,120,125);
+    color: var(--subtitle);
 }
 
 
@@ -315,15 +315,15 @@ a:hover {
 
  input:focus,
  textarea:focus {
-    border: 2px solid #FFBE00;
+    border: 2px solid var(--featured);
     outline: none;
  }
 
  .button {
     padding: 0.5rem 2rem;
-    background-color: #FFBE00;
+    background-color: var(--featured);
     appearance: none;
-    border: 2px solid #FFBE00;
+    border: 2px solid var(--featured);
     color: inherit;
  }
 
@@ -332,7 +332,7 @@ a:hover {
 /* This is for the quote icons */
 .quote-icon {
     font-size: 6rem;
-    color: rgb(120,120,125);
+    color: var(--quote);
     line-height: 1;
     display: inline-block;
  }

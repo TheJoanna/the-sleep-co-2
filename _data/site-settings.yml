@@ -15,3 +15,5 @@ design:
   white_color: '#ffffff'
   dark_color: '#192b37'
   light_color: '#E3ECF2'
+  subtitle_color: 'rgb(120,120,125)'
+  quote_color: 'rgb(120,120,125)'
