@@ -19,3 +19,5 @@ design:
   quote_color: 'rgb(120,120,125)'
   active-gallery_color: 'rgb(20,20,20)'
   active-gallery-subtitle_color: 'rgba(20,20,20,0.95)'
+  main_font: '"Catamaran", sans-serif'
+  paragraph_font: '"Catamaran", sans-serif'

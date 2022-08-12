@@ -134,7 +134,7 @@
 /* Typography Styles --------------------------------*/
 
 body { 
-    font-family: "Catamaran", sans-serif;
+    font-family: var(--main);
     color: var(--dark);
 }
 
