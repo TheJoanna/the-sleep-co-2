@@ -156,6 +156,7 @@ p {
     font-weight: 200;
     line-height: 1.5;
     margin-bottom: 1rem;
+    font-family: var(--paragraph);
 }
 
 p:last-child {
